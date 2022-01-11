@@ -1,5 +1,13 @@
-alfabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-alfabetH = []
+import random
+import string
 
-for a in range(len(alfabet)):
-    alfabetH.append(alfabet[a].upper())
+string.ascii_letters
+string.digits
+string.punctuation
+
+randomletter = random.choice(string.ascii_letters).upper()
+randomdigit = random.choice(string.digits)
+randomspecial = random.choice(string.punctuation)
+print(randomletter)
+print(randomdigit)
+print(randomspecial)
