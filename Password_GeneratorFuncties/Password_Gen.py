@@ -1,12 +1,9 @@
 import random
 import string
 
-randomletter = random.choice(string.ascii_letters)
-randomletterC = random.choice(string.ascii_letters).upper()
-randomdigit = random.choice(string.digits)
-randomspecial = random.choice(string.punctuation)
+password = []
 
-print(randomletter)
-print(randomletterC)
-print(randomdigit)
-print(randomspecial)
+amountLetter = random.randint(2,6)
+for a in range(amountLetter):
+    password.append(random.choice(string.ascii_letters).upper())
+print(password)
